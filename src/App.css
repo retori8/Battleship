@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+body {
+  background-image: url("./water.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.background {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* .board {
+  width: 500px;
+  height: 500px;
+  border-spacing: 0;
+  display: grid;
+  grid-template-rows: repeat(11, 1fr);
+  grid-template-columns: repeat(11, 1fr);
+  background-color:rgb(23, 58, 83);
+
+}
+
+.board * {
+
+  text-align: center;
+  font-size: 40px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  border: rgb(135, 144, 7) thin solid;
+} */
+#oppositeboard {
+  box-shadow: 0 0 5px 5px rgb(255, 106, 0);
+}
+
+
+.buttoncontainer {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.button {
+  width: 170px;
+  height: 50px;
+  margin: 10px;
+  border: none;
+  font-weight: bold;
+  color: rgb(23, 58, 83);
+}
+
+.number {
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: smaller;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  text-align: center;
+  color: white;
+  font-size: medium;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(23, 58, 83);
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonlg {
+  width: 170px;
+  height: 70px;
+  margin: 10px;
+  border: none;
+  background-color: rgb(135, 144, 7);
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.title {
+  margin: auto;
+  color: white;
+  font-size: xx-large;
+}
+
+.textitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20dvh;
+}
+
+.move {
+  color: rgb(241, 7, 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: smaller;
+}
+
+/* ------------------------------------------- */
+/* .boardBox{
+  width: 40px;
+  height: 40px;
+  background-color:rgb(23, 58, 83);
+  border-color: rgb(135, 144, 7);
+  margin: 0px;
+} */
+.board {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  width: 500px;
+  height: 500px;
+  border-spacing: 0;
+  margin-right: 50px;
+}
+
+.boardBox {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(23, 58, 83);
+  border: 1px solid rgb(135, 144, 7);
+  color: white;
+  font-size: larger;
+}
+
+.boardBox2 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(135, 144, 7);
+  border: 1px solid rgb(249, 249, 246);
+  color: white;
+  font-size: larger;
+}
+
+.boardBox3 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(130, 61, 115);
+  border: 1px solid rgb(135, 144, 7);
+  color: white;
+  font-size: larger;
+}
+.boardBox4 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(229, 22, 11);
+  border: 1px solid rgb(135, 144, 7);
+  color: white;
+  font-size: larger;
 }

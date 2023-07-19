@@ -1,25 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import { Row } from './components/row'; 
+import { RowNumber } from './components/rowNumber';
+import { Button } from './components/button';
+import { ButtonLg } from './components/buttonLg';
 
-function App() {
+export function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="background">
+        <div className="buttoncontainer">
+          <p>You must position <br/>your fleet.</p>
+          <Button name="Aircraft Carrier"></Button>
+          <Button name="Submarine"></Button>
+          <Button name="Battleship"></Button>
+          <Button name="Destroyers"></Button>
+          <Button name="Frigates"></Button>
+          <ButtonLg name="Start Battle"></ButtonLg>
+        </div>
+        <div className="board">
+          <RowNumber />
+          <Row id="1" />
+          <Row id="2" />
+          <Row id="3" />
+          <Row id="4" />
+          <Row id="5" />
+          <Row id="6" />
+          <Row id="7" />
+          <Row id="8" />
+          <Row id="9" />
+          <Row id="10" />
+        </div>
       </header>
     </div>
   );
 }
 
-export default App;
+
