@@ -1,7 +1,7 @@
 import '../App.css';
 
-export const Button =({name, onclick, num})=> {
+export const Button =({name, onclick})=> {
   return (
-    <button num={num} onClick={onclick}  className="button">{name}</button>
+    <button onClick={onclick} className="button">{name}</button>
   );
 }

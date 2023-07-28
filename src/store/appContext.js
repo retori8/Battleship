@@ -23,8 +23,9 @@ const injectContext = PassedComponent => {
 
 		useEffect(() => {
 
-			state.actions.selectFleetPositions();
-	
+			state.actions.selectPositionsPC();
+			state.actions.createBoard();
+			state.actions.pcPlay();
 
 			/**
 			 * EDIT THIS!

@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./views/home";
-import { Battle } from "./views/battle";
 import injectContext from "./store/appContext";
+import { BattleShip } from "./views/battleship";
 
 
 //create your first component
@@ -16,7 +16,7 @@ const Layout = () => {
 			<BrowserRouter basename={basename}>
 					<Routes>
 						<Route path="/" element={<Home />} />
-                        <Route path="/battle" element={<Battle />} />
+						<Route path="/battleship" element={<BattleShip />} />
 					</Routes>
 			</BrowserRouter>
 		</div>

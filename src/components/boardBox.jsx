@@ -1,12 +1,14 @@
-
 import React from "react";
 import '../App.css';
 
-export const BoardBox = ({ content, clas, onClick}) => {
+//each box on the board
+export const BoardBox = ({content, clas, onClick, disabled, row, col}) => {
 
   return (
-    <button className={clas}  onClick={onClick}>
+    <button className={clas} onClick={onClick} disabled ={disabled} row={row} col={col}>
       {content}
     </button>
   );
 };
+
+

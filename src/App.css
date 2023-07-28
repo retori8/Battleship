@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
 body {
-  background-image: url("./water.jpg");
+  background-image: url("./water2.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 320px;
-  min-height: 100vh
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
-
 .background {
   min-height: 100vh;
   display: flex;
@@ -16,46 +16,25 @@ body {
   align-items: center;
   justify-content: center;
 }
+/* home */
+.title {
+  margin: auto;
+  color: white;
+  font-size: xx-large;
+}
+.textitle {
+  font-size: 20dvh;
+}
 
-/* .board {
-  width: 500px;
-  height: 500px;
-  border-spacing: 0;
+/* board */
+.board {
   display: grid;
-  grid-template-rows: repeat(11, 1fr);
   grid-template-columns: repeat(11, 1fr);
-  background-color:rgb(23, 58, 83);
-
+  grid-template-rows: repeat(11, 1fr);
+  width: 550px;
+  height: 550px;
+  border-spacing: 0;
 }
-
-.board * {
-
-  text-align: center;
-  font-size: 40px;
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
-  border: rgb(135, 144, 7) thin solid;
-} */
-#oppositeboard {
-  box-shadow: 0 0 5px 5px rgb(255, 106, 0);
-}
-
-
-.buttoncontainer {
-  display: flex;
-  flex-direction: column;
-  margin: 30px;
-}
-
-.button {
-  width: 170px;
-  height: 50px;
-  margin: 10px;
-  border: none;
-  font-weight: bold;
-  color: rgb(23, 58, 83);
-}
-
 .number {
   color: white;
   display: flex;
@@ -63,68 +42,11 @@ body {
   align-items: center;
   font-size: smaller;
 }
-
-p {
-  text-align: center;
-  color: white;
-  font-size: medium;
-  font-family: 'Roboto', sans-serif;
-  background-color: rgb(23, 58, 83);
-  padding: 10px;
-}
-
-.buttonlg {
-  width: 170px;
-  height: 70px;
-  margin: 10px;
-  border: none;
-  background-color: rgb(135, 144, 7);
-  color: white;
-  font-size: medium;
-  font-weight: bold;
-}
-
-.title {
-  margin: auto;
-  color: white;
-  font-size: xx-large;
-}
-
-.textitle {
-  font-family: 'Roboto', sans-serif;
-  font-size: 20dvh;
-}
-
-.move {
-  color: rgb(241, 7, 7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: smaller;
-}
-
-/* ------------------------------------------- */
-/* .boardBox{
-  width: 40px;
-  height: 40px;
-  background-color:rgb(23, 58, 83);
-  border-color: rgb(135, 144, 7);
-  margin: 0px;
-} */
-.board {
-  display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(11, 1fr);
-  width: 500px;
-  height: 500px;
-  border-spacing: 0;
-  margin-right: 50px;
-}
-
+/* appearance of the boxes according to status */
 .boardBox {
   width: 50px;
   height: 50px;
-  background-color: rgb(23, 58, 83);
+  background-color: rgb(24, 66, 95);
   border: 1px solid rgb(135, 144, 7);
   color: white;
   font-size: larger;
@@ -142,7 +64,7 @@ p {
 .boardBox3 {
   width: 50px;
   height: 50px;
-  background-color: rgb(130, 61, 115);
+  background-color: rgb(138, 227, 234);
   border: 1px solid rgb(135, 144, 7);
   color: white;
   font-size: larger;
@@ -154,4 +76,87 @@ p {
   border: 1px solid rgb(135, 144, 7);
   color: white;
   font-size: larger;
+}
+/* section middle */
+.buttonscontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px;
+}
+.sign {
+  text-align: center;
+  color: white;
+  font-size: medium;
+  background-color: rgb(135, 144, 7);
+  border-radius: 5px;
+  padding: 20px;
+}
+.button {
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  border-color: white;
+  border-style: outset;
+  font-size: medium;
+  color:black
+}
+.buttonlg {
+  width: 170px;
+  height: 70px;
+  margin: 10px;
+  border-color: white;
+  box-shadow: 0 0 5px 5px white;
+  border-style: double;
+  border-radius: 5px;
+  background-color:rgb(135, 144, 7);
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  margin-top: 20px;
+}
+/* light according to the state of the game */
+#userLight{
+  box-shadow: 0 0 20px 20px rgb(15, 47, 68);
+}
+#pcLight{
+  box-shadow: 0 0 20px 20px rgb(15, 47, 68);
+}
+/* alerts */
+.alert{
+  width: 800px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color:rgb(135, 144, 7);
+  border-color: white;
+  box-shadow: 0 0 5px 5px white;
+  padding: 30px;
+  text-align: center;
+  font-size: x-large;
+}
+.buttonsAlert{
+  color: white;
+}
+.alertsmall{
+  background-color: rgb(138, 227, 234);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 100px;
+  top: 120px;
+  color:rgb(24, 66, 95);
+  font-size: large;
+  border-color: white;
+  border-style: outset;
+}
+.alertsmall h2{
+  margin-bottom: 60px;
+  margin-left: 10px;
+  color: rgb(24, 66, 95);
 }
